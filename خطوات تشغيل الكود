@@ -1,0 +1,33 @@
+1. Clone the repository :
+افتح الترمينال واكتب السطر ده
+git clone https://github.com/hassanmostafa1206/-Database_GUI-.git
+
+2. Install backend dependencies
+افتح الفيجوال ستوديو كود واكتب في الترمينال 
+cd back
+هيفتح الترمينال في ملف الباك وبعدين اكتب ده
+npm install
+node_modules هيثبت ملفات ال
+
+3. Start the server
+عشان تشغل السيرفر الاول هتخليك فاتح الترمينال اللي شغال في الباك وتكتب السطر ده
+node server.js
+هيظهرلك ده لو كل حاجة تمام عندك
+Server is running at http://localhost:3000
+وبعدين هتدوس ع اللينك هتظهرلك الرسالة دي ctrl هتدوس
+Server is running and ready ✅
+
+4. Run the front-end
+وتشغل اللايف سيرفر او تفتح الموقع بتاع الكود وهيظهرلك الاقسام دي Hm.html هتروح على كود ال
+- Branch
+- Website
+- Employees
+- Categories
+- Cashier
+- Customers
+- Products
+- Invoices
+- ProductsInvoice
+
+5. Receiving input data
+اول لما تدخل البيانات وتدوس حفظ في اي فورم ارجع للترمينال اللي كنت فاتحه ومشغل فيه السيرفر وهيظهرلك البيانات اللي دخلت كلها
