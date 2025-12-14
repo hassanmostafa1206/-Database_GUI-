@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hypermarket Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgHM.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <h1>Hypermarket Project Forms</h1>
+
+  <div class="menu">
+    <button onclick="showForm('branchForm')">Branch</button>
+    <button onclick="showForm('websiteForm')">Website</button>
+    <button onclick="showForm('employeeForm')">Employees</button>
+    <button onclick="showForm('categoryForm')">Categories</button>
+    <button onclick="showForm('casherForm')">Cashier</button>
+    <button onclick="showForm('customerForm')">Customers</button>
+    <button onclick="showForm('productForm')">Products</button>
+    <button onclick="showForm('invoiceForm')">Invoices</button>
+    <button onclick="showForm('productsInvoiceForm')">ProductsInvoice</button>
+  </div>
+
+  <!-- Branch -->
+  <form id="branchForm" class="form hidden" action="http://localhost:3000/branch" method="POST" autocomplete="off">
+    <h2>Branch</h2>
+    <label>Branch Number:</label><input type="number" name="Branch_number" required><br>
+    <label>Branch Name:</label><input type="text" name="Branch_name" required><br>
+    <label>Branch Address:</label><input type="text" name="Branch_address" required><br>
+    <label>Phone:</label><input type="text" name="Phone" maxlength="11" required><br>
+    <button type="submit">Save Branch</button>
+  </form>
+
+  <!-- Website -->
+  <form id="websiteForm" class="form hidden" action="http://localhost:3000/website" method="POST" autocomplete="off">
+    <h2>Website</h2>
+    <label>Lock ID:</label><input type="number" name="Lock_id" required><br>
+    <label>Email:</label><input type="email" name="Email" required><br>
+    <label>Password:</label><input type="password" name="Password" required><br>
+    <label>Payment Method:</label><input type="text" name="Payment_method"><br>
+    <button type="submit">Save Website</button>
+  </form>
+
+  <!-- Employees -->
+  <form id="employeeForm" class="form hidden" action="http://localhost:3000/employees" method="POST" autocomplete="off">
+    <h2>Employees</h2>
+    <label>Employee Code:</label><input type="number" name="Employee_code" required><br>
+    <label>First Name:</label><input type="text" name="First_name" required><br>
+    <label>Last Name:</label><input type="text" name="Last_name" required><br>
+    <label>Phone:</label><input type="text" name="Phone" maxlength="11" required><br>
+    <label>Working Hours:</label><input type="text" name="Working_hours" required><br>
+    <label>Salary:</label><input type="number" step="0.01" name="Salary" required><br>
+    <label>DOB:</label><input type="date" name="DOB" required><br>
+    <label>Sex:</label><input type="text" name="Sex" maxlength="1" required><br>
+    <label>City:</label><input type="text" name="City"><br>
+    <label>Street:</label><input type="text" name="Street"><br>
+    <label>Zip Code:</label><input type="text" name="Zip_code"><br>
+    <label>Position ID:</label><input type="number" name="Position_id"><br>
+    <label>Branch Number:</label><input type="number" name="Branch_number"><br>
+    <label>Lock ID:</label><input type="number" name="Lock_id"><br>
+    <button type="submit">Save Employee</button>
+  </form>
+
+  <!-- Categories -->
+  <form id="categoryForm" class="form hidden" action="http://localhost:3000/categories" method="POST" autocomplete="off">
+    <h2>Categories</h2>
+    <label>Category Code:</label><input type="number" name="Category_code" required><br>
+    <label>Category Name:</label><input type="text" name="Category_name" required><br>
+    <label>Category Location:</label><input type="text" name="Category_location"><br>
+    <label>Details:</label><input type="text" name="Details"><br>
+    <label>Branch Number:</label><input type="number" name="Branch_number"><br>
+    <button type="submit">Save Category</button>
+  </form>
+
+  <!-- Cashier -->
+  <form id="casherForm" class="form hidden" action="http://localhost:3000/casher" method="POST" autocomplete="off">
+    <h2>Cashier</h2>
+    <label>Cashier ID:</label><input type="number" name="Cashier_id" required><br>
+    <label>First Name:</label><input type="text" name="First_name" required><br>
+    <label>Last Name:</label><input type="text" name="Last_name" required><br>
+    <label>Phone:</label><input type="text" name="Phone" maxlength="11" required><br>
+    <label>Working Hours:</label><input type="number" step="0.01" name="Working_hours" required><br>
+    <label>Address:</label><input type="text" name="Address" required><br>
+    <label>Password:</label><input type="password" name="Password" required><br>
+    <button type="submit">Save Cashier</button>
+  </form>
+
+  <!-- Customers -->
+  <form id="customerForm" class="form hidden" action="http://localhost:3000/customers" method="POST" autocomplete="off">
+    <h2>Customers</h2>
+    <label>Customer Code:</label><input type="number" name="Customer_code" required><br>
+    <label>First Name:</label><input type="text" name="First_name" required><br>
+    <label>Last Name:</label><input type="text" name="Last_name" required><br>
+    <label>Phone:</label><input type="text" name="Phone" maxlength="11" required><br>
+    <label>City:</label><input type="text" name="City"><br>
+    <label>Street:</label><input type="text" name="Street"><br>
+    <label>Zip Code:</label><input type="text" name="Zip_code"><br>
+    <label>Branch Number:</label><input type="number" name="Branch_number"><br>
+    <label>Lock ID:</label><input type="number" name="Lock_id"><br>
+    <button type="submit">Save Customer</button>
+  </form>
+
+  <!-- Products -->
+  <form id="productForm" class="form hidden" action="http://localhost:3000/products" method="POST" autocomplete="off">
+    <h2>Products</h2>
+    <label>Product Code:</label><input type="number" name="Product_code" required><br>
+    <label>Product Name:</label><input type="text" name="Product_name" required><br>
+    <label>Expiry Date:</label><input type="date" name="Expiry_date"><br>
+    <label>Quantity:</label><input type="number" name="Quantity"><br>
+    <label>Product Description:</label><input type="text" name="Product_description"><br>
+    <label>Category Code:</label><input type="number" name="Category_code"><br>
+    <button type="submit">Save Product</button>
+  </form>
+
+  <!-- Invoices -->
+  <form id="invoiceForm" class="form hidden" action="http://localhost:3000/invoices" method="POST" autocomplete="off">
+    <h2>Invoices</h2>
+    <label>Invoice Number:</label><input type="number" name="Invoice_number" required><br>
+    <label>Product Details:</label><input type="text" name="Product_details"><br>
+    <label>Invoice Date:</label><input type="date" name="Invoice_date"><br>
+    <label>Total Price:</label><input type="number" step="0.01" name="Total_price" required><br>
+    <label>Unit Price:</label><input type="number" step="0.01" name="Unit_price"><br>
+    <label>Cashier ID:</label><input type="number" name="Cashier_id"><br>
+    <label>Customer Code:</label><input type="number" name="Customer_code"><br>
+    <button type="submit">Save Invoice</button>
+  </form>
+
+  <!-- ProductsInvoice -->
+  <form id="productsInvoiceForm" class="form hidden" action="http://localhost:3000/products-invoice" method="POST" autocomplete="off">
+    <h2>ProductsInvoice</h2>
+    <label>Product Code:</label><input type="number" name="Product_code" required><br>
+    <label>Invoice Number:</label><input type="number" name="Invoice_number" required><br>
+    <label>Total Price:</label><input type="number" step="0.01" name="Total_price" required><br>
+    <label>Quantity:</label><input type="number" name="Quantity"><br>
+    <label>Print Date:</label><input type="date" name="Print_date"><br>
+    <button type="submit">Save ProductsInvoice</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
