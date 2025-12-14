@@ -7,7 +7,7 @@ git clone https://github.com/hassanmostafa1206/-Database_GUI-.git
 cd back
 هيفتح الترمينال في ملف الباك وبعدين اكتب ده
 npm install
-Node.js بس لازم تحمل
+Node.js بس لازم تكون محمل
 node_modules هيثبت ملفات ال
 
 3. Start the server
